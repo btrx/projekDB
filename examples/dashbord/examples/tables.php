@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 <?php include('db_connect.php');
 ?>
+=======
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,11 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <title>
+<<<<<<< HEAD
     Black Dashboard by Creative Tim
+=======
+    Dashboard Admin
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
@@ -29,7 +36,11 @@
         Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
     -->
       <div class="sidebar-wrapper">
+<<<<<<< HEAD
        <div class="logo">
+=======
+        <div class="logo">
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
           <a href="javascript:void(0)" class="simple-text logo-mini">
           <img src="../assets/img/anime3.png" style="width:30px;height:40px; alt="Profile Photo">
           </a>
@@ -45,7 +56,11 @@
             </a>
           </li>
           <li>
+<<<<<<< HEAD
             <a href="./icons.html">
+=======
+            <a href="./icons.php">
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
               <i class="tim-icons icon-atom"></i>
               <p>Icons</p>
             </a>
@@ -62,7 +77,11 @@
               <p>Notifications</p>
             </a>
           </li>
+<<<<<<< HEAD
           <li class="active ">
+=======
+          <li class='active'>
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
             <a href="./tables.php">
               <i class="tim-icons icon-puzzle-10"></i>
               <p>Table List</p>
@@ -143,6 +162,7 @@
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header">
+<<<<<<< HEAD
                 <h4 class="card-title"> Tabel Barang</h4>
               </div>
               <?php 
@@ -177,6 +197,259 @@
                     <td class="text"><?php echo $keterangan ?></td>
                   </tr>
                   <?php } ?>
+=======
+                <h4 class="card-title"> Simple Table</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Country
+                        </th>
+                        <th>
+                          City
+                        </th>
+                        <th class="text-center">
+                          Salary
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Dakota Rice
+                        </td>
+                        <td>
+                          Niger
+                        </td>
+                        <td>
+                          Oud-Turnhout
+                        </td>
+                        <td class="text-center">
+                          $36,738
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Minerva Hooper
+                        </td>
+                        <td>
+                          Curaçao
+                        </td>
+                        <td>
+                          Sinaai-Waas
+                        </td>
+                        <td class="text-center">
+                          $23,789
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sage Rodriguez
+                        </td>
+                        <td>
+                          Netherlands
+                        </td>
+                        <td>
+                          Baileux
+                        </td>
+                        <td class="text-center">
+                          $56,142
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Philip Chaney
+                        </td>
+                        <td>
+                          Korea, South
+                        </td>
+                        <td>
+                          Overland Park
+                        </td>
+                        <td class="text-center">
+                          $38,735
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Doris Greene
+                        </td>
+                        <td>
+                          Malawi
+                        </td>
+                        <td>
+                          Feldkirchen in Kärnten
+                        </td>
+                        <td class="text-center">
+                          $63,542
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Mason Porter
+                        </td>
+                        <td>
+                          Chile
+                        </td>
+                        <td>
+                          Gloucester
+                        </td>
+                        <td class="text-center">
+                          $78,615
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Jon Porter
+                        </td>
+                        <td>
+                          Portugal
+                        </td>
+                        <td>
+                          Gloucester
+                        </td>
+                        <td class="text-center">
+                          $98,615
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card  card-plain">
+              <div class="card-header">
+                <h4 class="card-title"> Table on Plain Background</h4>
+                <p class="category"> Here is a subtitle for this table</p>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                      <tr>
+                        <th>
+                          Name
+                        </th>
+                        <th>
+                          Country
+                        </th>
+                        <th>
+                          City
+                        </th>
+                        <th class="text-center">
+                          Salary
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Dakota Rice
+                        </td>
+                        <td>
+                          Niger
+                        </td>
+                        <td>
+                          Oud-Turnhout
+                        </td>
+                        <td class="text-center">
+                          $36,738
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Minerva Hooper
+                        </td>
+                        <td>
+                          Curaçao
+                        </td>
+                        <td>
+                          Sinaai-Waas
+                        </td>
+                        <td class="text-center">
+                          $23,789
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Sage Rodriguez
+                        </td>
+                        <td>
+                          Netherlands
+                        </td>
+                        <td>
+                          Baileux
+                        </td>
+                        <td class="text-center">
+                          $56,142
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Philip Chaney
+                        </td>
+                        <td>
+                          Korea, South
+                        </td>
+                        <td>
+                          Overland Park
+                        </td>
+                        <td class="text-center">
+                          $38,735
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Doris Greene
+                        </td>
+                        <td>
+                          Malawi
+                        </td>
+                        <td>
+                          Feldkirchen in Kärnten
+                        </td>
+                        <td class="text-center">
+                          $63,542
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Mason Porter
+                        </td>
+                        <td>
+                          Chile
+                        </td>
+                        <td>
+                          Gloucester
+                        </td>
+                        <td class="text-center">
+                          $78,615
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Jon Porter
+                        </td>
+                        <td>
+                          Portugal
+                        </td>
+                        <td>
+                          Gloucester
+                        </td>
+                        <td class="text-center">
+                          $98,615
+                        </td>
+                      </tr>
+                    </tbody>
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
                   </table>
                 </div>
               </div>
@@ -236,6 +509,10 @@
           <span class="badge light-badge mr-2"></span>
           <span class="badge dark-badge ml-2"></span>
           <span class="color-label">DARK MODE</span>
+<<<<<<< HEAD
+=======
+        </li>
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
       </ul>
     </div>
   </div>
