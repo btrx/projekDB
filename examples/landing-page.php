@@ -21,7 +21,11 @@
 </head>
 
 <body class="landing-page">
+<<<<<<< HEAD
 <button name="register" type="button" value="" onclick="window.open('/nganu/tema/examples/dashbord/examples/main.php')" class="btn btn-primary btn-round" >lanjut</button>
+=======
+<button name="register" type="button" value="" onclick="window.open('/examples/dashbord/examples/main.php')" class="btn btn-primary btn-round" >lanjut</button>
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
 </body>
 
 </html>

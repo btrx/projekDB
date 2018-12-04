@@ -71,6 +71,7 @@ include('db_connect.php')
                     </div>
                     <button type="submit" name="masuk" class="btn btn-info btn-round btn-lg">Masuk </button>
                     <?php
+<<<<<<< HEAD
                       if (isset ($_POST['daftar'])) {
                         $username = $_POST['username'];
                         $password = $_POST['password'];
@@ -87,6 +88,24 @@ include('db_connect.php')
                           $connect->close();
                           }
                             ?>
+=======
+                      if (isset ($_POST['masuk'])) {
+                        echo "fuck you";
+                        $username = $_POST['username'];
+                        $password = $_POST['password'];
+                        $sql = "SELECT * FROM admint WHERE username = '$username' and passcode = '$password'";
+                        $q = $connect->query($sql);
+                        $cek=mysqli_fetch_array($q,MYSQLI_ASSOC);
+                        printf ("%s %s\n $cek",$cek["username"],$cek["passcode"]);
+                        if ($cek) {
+                          $_SESSION['username']=$username;
+                          header("location:landing-page.php");
+                        } else {
+                          echo "bangsat";
+                        }
+                      }
+                    ?>
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
                   </form>
                 </div>
                 <div class="card-footer">
@@ -124,6 +143,7 @@ include('db_connect.php')
   <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
   <script src="../assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
 </body>
+<<<<<<< HEAD
 </html>
 
 
@@ -144,3 +164,6 @@ if($q ==1 ){
 }
 // echo $pas;
  ?>
+=======
+</html>
+>>>>>>> ba3e6a85b327db6834a6e1073933e633751b9990
