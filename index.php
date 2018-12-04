@@ -33,8 +33,8 @@
       <div class="container">
         <div class="content-center brand">
           <h1 class="h1-seo">LAMAN AWAL</h1>
-          <button name="register" type="button" value="" onclick="window.open('/nganu/tema/examples/daftar.php')" class="btn btn-primary btn-round" >DAFTAR</button>
-          <button name="login" type="button" value="" onclick="window.open('/nganu/tema/examples/masuk.php')" class="btn btn-primary btn-round" >MASUK</button>
+          <button name="register" type="button" value="" onclick="window.open('examples/daftar.php')" class="btn btn-primary btn-round" >DAFTAR</button>
+          <button name="login" type="button" value="" onclick="window.open('examples/masuk.php')" class="btn btn-primary btn-round" >MASUK</button>
         
           
   <!--   Core JS Files   -->

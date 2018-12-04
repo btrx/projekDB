@@ -71,22 +71,22 @@ include('db_connect.php')
                     </div>
                     <button type="submit" name="masuk" class="btn btn-info btn-round btn-lg">Masuk </button>
                     <?php
-                      if (isset ($_POST['daftar'])) {
+                      if (isset ($_POST['masuk'])) {
+                        echo "fuck you";
                         $username = $_POST['username'];
                         $password = $_POST['password'];
-                        $pas=md5($password);
-                        ($sql = "SELECT * FROM admint WHERE username = '$username' and passcode = '$pas'") or die(mysql_error());
+                        $sql = "SELECT * FROM admint WHERE username = '$username' and passcode = '$password'";
                         $q = $connect->query($sql);
-                          if ($q) {
-                            echo "berhasil boss";
-                            $_SESSION['username']=$username;
-                            header("location:landing-page.php");
-                          } else {
-                            echo "Error: ".$sql."<br>".$connect->error;
-                            }
-                          $connect->close();
-                          }
-                            ?>
+                        $cek=mysqli_fetch_array($q,MYSQLI_ASSOC);
+                        printf ("%s %s\n $cek",$cek["username"],$cek["passcode"]);
+                        if ($cek) {
+                          $_SESSION['username']=$username;
+                          header("location:landing-page.php");
+                        } else {
+                          echo "bangsat";
+                        }
+                      }
+                    ?>
                   </form>
                 </div>
                 <div class="card-footer">
@@ -125,22 +125,3 @@ include('db_connect.php')
   <script src="../assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
 </body>
 </html>
-
-
-<?php 
-session_start();
-include 'admin/config.php';
-$uname=$_POST['uname'];
-$pass=$_POST['pass'];
-$pas=md5($pass);
-($sql = "select * from admin where uname='$uname' and pass='$pas'")or die(mysql_error());
-$q = $connect->query($sql);
-if($q ==1 ){
-	$_SESSION['uname']=$uname;
-	header("location:admin/index.php");
-}else{
-	header("location:index.php?pesan=gagal")or die(mysql_error());
-	// mysql_error();
-}
-// echo $pas;
- ?>
